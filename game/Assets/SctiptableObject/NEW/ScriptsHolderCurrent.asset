@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7652746ce2e01144b56656f4436e6ad, type: 3}
+  m_Name: ScriptsHolderCurrent
+  m_EditorClassIdentifier: 
+  viligerInteraction: "\r\n   function ActionForHammer ()\r\n      if (IsTargetBuildingIsConstricted()!=true)\r\n
+    \       then\r\n            if (IsViligerBusy()!=true)\r\n            then\r\n
+    \               ViligerBuild()\r\n            end\r\n        else\r\n            ViligerStateChange(\"ViligerLookingForJobWithTool\")\r\n
+    \       end\r\n    end\r\n    function ActionForAxe ()\r\n        if (MaxResurcesHeld()!=true
+    and TargetObjectExist())\r\n        then\r\n\r\n            ViligerGatherWood();\r\n
+    \       \r\n        else\r\n       \r\n            if (MaxResurcesHeld())\r\n
+    \           then             \r\n                TakeResources();\r\n            else\r\n
+    \           \r\n               if (IsViligerBusy()!=true)\r\n               then\r\n
+    \                ViligerStateChange(\"ViligerLookingForJobWithTool\");\r\n                end\r\n
+    \           end\r\n        end\r\n    end\r\n function ActionForPick ()\r\n        if
+    (MaxResurcesHeld()!=true and TargetObjectExist())\r\n        then\r\n\r\n            ViligerGatherStone();\r\n
+    \       \r\n        else\r\n       \r\n            if (MaxResurcesHeld())\r\n
+    \           then             \r\n                TakeResources();\r\n            else\r\n
+    \           \r\n               if (IsViligerBusy()!=true)\r\n               then\r\n
+    \                ViligerStateChange(\"ViligerLookingForJobWithTool\");\r\n                end\r\n
+    \           end\r\n        end\r\n    end\r\n   \r\n    if (GetHeldToolName()
+    == \"Axe\")\r\n        then\r\n            ActionForAxe()\r\n        end\r\n        if
+    (GetHeldToolName() == \"Hammer\")\r\n        then\r\n           ActionForHammer()\r\n
+    \       end\r\n        if (GetHeldToolName() == \"Pick\")\r\n        then\r\n
+    \           ActionForPick()\r\n        end\r\n        \r\n\r\n\r\n"
+  viligerInteractionNormalMode: 1
+  viligerLookingForJobWithTool: "\r\n        if(CountObjects()>0)\r\n           then\r\n
+    \          if (FindClosestJob()==true)\r\n             then\r\n                AddToStateChain(\"ViligerInteraction\");\r\n
+    \               ViligerStateChange(\"ViligerGo\");\r\n             else\r\n                   Wait(3)\r\n
+    \                   ViligerStateChange(\"VilligerLookingForJobWithTool\");\r\n
+    \            end\r\n        else\r\n                 Wait(3)\r\n                    ViligerStateChange(\"VilligerLookingForJobWithTool\");\r\n
+    \           end\r\n        \r\n"
+  viligerLookingForJobWithToolNormalMode: 1

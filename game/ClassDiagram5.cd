@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="TurretLogStatistics">
+    <Position X="0.75" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\New\ScriptableObjects\Statistics\Enemies\TurretLogStatistics.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TurretLogStatisticsSerializable">
+    <Position X="5.25" Y="4.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Assets\Scripts\New\ScriptableObjects\Statistics\Enemies\Serializable\TurretLogStatisticsSerializable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyStatisticsSerializable">
+    <Position X="5.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgCAAAAAACAAAAAAAGEAQCAAAgAAAQAAAg=</HashCode>
+      <FileName>Assets\Scripts\New\ScriptableObjects\Statistics\Enemies\Serializable\EnemyStatisticsSerializable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyStatistics">
+    <Position X="0.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgCAAAAAACAAAAAAAGAAACAAAgAAAAAKAA=</HashCode>
+      <FileName>Assets\Scripts\New\ScriptableObjects\Statistics\Enemies\EnemyStatistics.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MovingObjectStatistics" Collapsed="true">
+    <Position X="3.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\New\ScriptableObjects\Statistics\MovingObjectStatistics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
